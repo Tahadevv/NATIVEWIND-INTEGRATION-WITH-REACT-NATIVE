@@ -1,5 +1,6 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
+import { NativeWindStyleSheet } from "nativewind";
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
@@ -35,3 +36,8 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
